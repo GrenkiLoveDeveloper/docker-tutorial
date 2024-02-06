@@ -11,8 +11,8 @@ wsl --install
 2. После перезагрузки установите дистрибутив Ubuntu и настройте его на WSL2:
 
 ```
-   wsl --install -d Ubuntu
-   wsl --set-version ubuntu 2
+wsl --install -d Ubuntu
+wsl --set-version ubuntu 2
 ```
 
 3. Откройте cmd и введите название выбранного ранее дистрибутива. Вы перейдете в bash linux, где требуется создать пользователя.
@@ -30,7 +30,8 @@ net localgroup docker-users "login pc" /ADD
 
 5. Откройте командную строку или PowerShell и введите следующую команду, чтобы проверить, что Docker установлен правильно:
 
-```bash
+```
+bash
 docker run hello-world
 ```
 
@@ -92,7 +93,7 @@ code .
 В папке пользователя (C:\Users\ [Имя_Пользователя]\ ) можно создать файл .bash_profile и вставить алиасы... например:
 
 ```
-    alias dclogs='winpty docker-compose logs -f'
+alias dclogs='winpty docker-compose logs -f'
 ```
 
 или указать путь до файла с алиасами
