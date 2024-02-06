@@ -4,8 +4,8 @@
 
 1. Откройте CMD/Powershell от имени Администратора и введите следующую команду для установки WSL:
 
-```wsl --install
-
+```
+wsl --install
 ```
 
 2. После перезагрузки установите дистрибутив Ubuntu и настройте его на WSL2:
@@ -39,8 +39,9 @@ docker run hello-world
 Создайте файл .wslconfig в папке пользователя (C:\Users\ [Имя_Пользователя]\ ) и укажите ограничения по использованию ОЗУ, CPU и т.д.
 [Подробнее](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig)
 
-```[wsl2]
-    memory=4GB
+```
+[wsl2]
+memory=4GB
 ```
 
 # Размещение проекта
@@ -80,8 +81,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 Для запуска VS Code в WSL необходимо установить расширение WSL и запустить из консоли
 
-```code .
-
+```
+code .
 ```
 
 # Аллиасы
