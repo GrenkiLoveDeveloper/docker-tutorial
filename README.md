@@ -31,7 +31,6 @@ net localgroup docker-users "login pc" /ADD
 5. Откройте командную строку или PowerShell и введите следующую команду, чтобы проверить, что Docker установлен правильно:
 
 ```
-bash
 docker run hello-world
 ```
 
